@@ -12,19 +12,12 @@
 .header__logo {
   display: flex;
   align-items: center;
-  gap: 14px;
   margin-right: clamp(24px, 5vw, 90px);
 }
 
-.header__logo-icon {
-  width: 60px;
-  height: 60px;
-}
-
-.header__logo-name {
-  color: var(--color-primary);
-  font-size: 24px;
-  font-weight: 700;
+.header__logo-img {
+  width: 178px;
+  height: 61px;
 }
 
 .header__nav {

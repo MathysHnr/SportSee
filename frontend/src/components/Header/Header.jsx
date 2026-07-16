@@ -10,8 +10,7 @@ function Header() {
   return (
     <header className="header">
       <NavLink to="/" className="header__logo">
-        <img src={logo} alt="Logo SportSee" className="header__logo-icon" />
-        <span className="header__logo-name">SportSee</span>
+        <img src={logo} alt="SportSee" className="header__logo-img" />
       </NavLink>
       <nav className="header__nav">
         <ul className="header__nav-list">

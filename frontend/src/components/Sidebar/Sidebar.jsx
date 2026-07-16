@@ -1,14 +1,14 @@
-import yogaIcon from '../../assets/icons/yoga.svg'
-import swimIcon from '../../assets/icons/swim.svg'
-import bikeIcon from '../../assets/icons/bike.svg'
-import dumbbellIcon from '../../assets/icons/dumbbell.svg'
+import meditationIcon from '../../assets/icons/meditation.svg'
+import swimmingIcon from '../../assets/icons/swimming.svg'
+import cyclingIcon from '../../assets/icons/cycling.svg'
+import bodybuildingIcon from '../../assets/icons/bodybuilding.svg'
 import './Sidebar.css'
 
 const ACTIVITIES = [
-  { name: 'Relaxation', icon: yogaIcon },
-  { name: 'Natation', icon: swimIcon },
-  { name: 'Cyclisme', icon: bikeIcon },
-  { name: 'Musculation', icon: dumbbellIcon },
+  { name: 'Relaxation', icon: meditationIcon },
+  { name: 'Natation', icon: swimmingIcon },
+  { name: 'Cyclisme', icon: cyclingIcon },
+  { name: 'Musculation', icon: bodybuildingIcon },
 ]
 
 /**

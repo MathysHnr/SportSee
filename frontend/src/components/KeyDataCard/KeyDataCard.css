@@ -9,18 +9,9 @@
 }
 
 .key-data-card__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 60px;
   height: 60px;
-  border-radius: 6px;
   flex-shrink: 0;
-}
-
-.key-data-card__icon img {
-  width: 24px;
-  height: 24px;
 }
 
 .key-data-card__value {
