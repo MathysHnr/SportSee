@@ -20,12 +20,12 @@ function PerformanceChart({ data }) {
   return (
     <div className="performance-chart">
       <ResponsiveContainer width="100%" height="100%">
-        <RadarChart data={data} outerRadius="62%" cx="50%" cy="50%">
+        <RadarChart data={data} outerRadius="58%" cx="50%" cy="50%">
           <PolarGrid radialLines={false} stroke="#FFFFFF" />
           <PolarAngleAxis
             dataKey="kind"
             tickLine={false}
-            tick={{ fill: '#FFFFFF', fontSize: 12, fontWeight: 500 }}
+            tick={{ fill: '#FFFFFF', fontSize: 11, fontWeight: 500 }}
           />
           <Radar dataKey="value" fill="#FF0101" fillOpacity={0.7} stroke="none" />
         </RadarChart>

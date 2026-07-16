@@ -64,7 +64,7 @@ function AverageSessionsChart({ data }) {
     <div className="average-sessions">
       <h2 className="average-sessions__title">Durée moyenne des sessions</h2>
       <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={data} margin={{ top: 80, right: 12, bottom: 24, left: 12 }}>
+        <LineChart data={data} margin={{ top: 80, right: 16, bottom: 24, left: 16 }}>
           <defs>
             <linearGradient id="sessionLineGradient" x1="0%" y1="0" x2="100%" y2="0">
               <stop offset="0%" stopColor="rgba(255, 255, 255, 0.4)" />
