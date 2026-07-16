@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header/Header'
+import Sidebar from './components/Sidebar/Sidebar'
 
 /**
  * Racine de l'application : structure générale (header, sidebar, contenu)
@@ -11,6 +12,7 @@ function App() {
     <div className="app">
       <Header />
       <div className="app__body">
+        <Sidebar />
         <main className="app__content">
           <Routes>
             <Route path="/" element={<p>Accueil</p>} />
