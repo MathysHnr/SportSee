@@ -13,7 +13,18 @@ const API_BASE_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:3000'
  * @throws {Error} Si la requête échoue ou si le serveur répond en erreur.
  */
 async function fetchFromApi(endpoint) {
-  const response = await fetch(`${API_BASE_URL}${endpoint}`)
+  let response
+
+  try {
+    response = await fetch(`${API_BASE_URL}${endpoint}`)
+  } catch {
+    // Erreur réseau : l'API n'est pas démarrée ou est injoignable.
+    throw new Error(
+      `Le serveur SportSee est injoignable (${API_BASE_URL}). ` +
+        "Vérifiez que l'API est bien démarrée, ou repassez en données mockées " +
+        '(VITE_USE_MOCK=true).',
+    )
+  }
 
   if (!response.ok) {
     throw new Error(`Erreur ${response.status} lors de l'appel à ${endpoint}`)
