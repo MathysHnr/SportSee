@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import Header from './components/Header/Header'
 
 /**
  * Racine de l'application : structure générale (header, sidebar, contenu)
@@ -8,6 +9,7 @@ import { Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <div className="app">
+      <Header />
       <div className="app__body">
         <main className="app__content">
           <Routes>
