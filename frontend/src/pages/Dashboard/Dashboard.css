@@ -1,0 +1,53 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(32px, 5vh, 68px);
+}
+
+.dashboard__greeting {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dashboard__greeting-title {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.dashboard__greeting-name {
+  color: var(--color-primary);
+}
+
+.dashboard__greeting-text {
+  font-size: 18px;
+}
+
+.dashboard__content {
+  display: flex;
+  gap: clamp(16px, 2.2vw, 31px);
+}
+
+.dashboard__charts {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 2.2vw, 30px);
+}
+
+.dashboard__charts-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(16px, 2.2vw, 30px);
+  height: 263px;
+}
+
+.dashboard__key-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: clamp(16px, 2.2vw, 30px);
+  width: clamp(200px, 21vw, 258px);
+  flex-shrink: 0;
+}
